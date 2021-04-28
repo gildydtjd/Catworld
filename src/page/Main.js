@@ -16,30 +16,30 @@ function Main(props) {
   };
   const SectionBox = styled.div`
     @media only screen and (max-width: 480px) {
-      display: list-item !important;
+      display: block;
       .sectionBox__left {
         width: 100% !important;
         height: 70vh !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .sectionBox__left__info {
         height: 300px !important;
-        background-size: cover !important;
+        background-size: cover;
         width: 300px !important;
       }
       .sectionBox__right {
         width: 100% !important;
         height: 30vh !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .sectionBox__right__info {
-        margin: 0 !important;
+        margin: 0;
         font-size: 20px !important;
-        text-align: center !important;
+        text-align: center;
       }
     }
     width: 100%;
