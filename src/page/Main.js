@@ -66,7 +66,7 @@ function Main(props) {
         </div>
         <div className="sectionBox__right">
           <div className="sectionBox__right__info" {...animatedItem[2]}>
-            부모님은 고양이를 싫다하셨다
+            부모님은 고양이를 싫어하셨다
           </div>
         </div>
       </SectionBox>
