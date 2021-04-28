@@ -15,6 +15,33 @@ function Main(props) {
     9: useScrollFadeIn("right", 2.5, 0.4),
   };
   const SectionBox = styled.div`
+    @media only screen and (max-width: 480px) {
+      display: list-item !important;
+      .sectionBox__left {
+        width: 100% !important;
+        height: 70vh !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+      .sectionBox__left__info {
+        height: 300px !important;
+        background-size: cover !important;
+        width: 300px !important;
+      }
+      .sectionBox__right {
+        width: 100% !important;
+        height: 30vh !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+      .sectionBox__right__info {
+        margin: 0 !important;
+        font-size: 20px !important;
+        text-align: center !important;
+      }
+    }
     width: 100%;
     height: 100vh;
     justify-content: center;
@@ -24,6 +51,7 @@ function Main(props) {
     display: flex;
     justify-content: center;
     align-items: center;
+
     .sectionBox__left {
       width: 50%;
       height: 100vh;
