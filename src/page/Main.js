@@ -7,6 +7,12 @@ function Main(props) {
     1: useScrollFadeIn("right", 2.5, 0.4),
     2: useScrollFadeIn("left", 2.5, 0.5),
     3: useScrollFadeIn("right", 2.5, 0.4),
+    4: useScrollFadeIn("left", 2.5, 0.5),
+    5: useScrollFadeIn("right", 2.5, 0.4),
+    6: useScrollFadeIn("left", 2.5, 0.5),
+    7: useScrollFadeIn("right", 2.5, 0.4),
+    8: useScrollFadeIn("left", 2.5, 0.5),
+    9: useScrollFadeIn("right", 2.5, 0.4),
   };
   const SectionBox = styled.div`
     width: 100%;
@@ -39,7 +45,7 @@ function Main(props) {
         color: #fff;
         width: 80%;
         margin: 70% ${(props) => props.p};
-        font-size: 21px;
+        font-size: 30px;
       }
     }
   `;
@@ -54,28 +60,55 @@ function Main(props) {
       <VideoSectionBox autoPlay loop muted="muted">
         <source src="/assets/video/cat.mp4" type="video/mp4" />
       </VideoSectionBox>
-      <SectionBox imgUrl="/assets/img/cat4.jpg" p="8%">
+      <SectionBox imgUrl="/assets/img/cat5.jpg" p="8%">
         <div className="sectionBox__left">
           <div className="sectionBox__left__info" {...animatedItem[3]}></div>
         </div>
         <div className="sectionBox__right">
           <div className="sectionBox__right__info" {...animatedItem[2]}>
-            As anyone who has ever been around a cat for any length of time well
-            knows, cats have enormous patience with the limitations of the human
-            kind.
+            부모님은 고양이가 싫다하셨다
           </div>
         </div>
       </SectionBox>
       <SectionBox imgUrl="/assets/img/cat3.jpg" p="25%">
         <div className="sectionBox__right">
           <div className="sectionBox__right__info" {...animatedItem[0]}>
-            It is difficult to obtain the friendship of a cat. It is a
-            philosophical animal.... <br />
-            one that does not place its affections thoughtlessly.
+            그래서 나는 고양이를 데려왔다
           </div>
         </div>
         <div className="sectionBox__left">
           <div className="sectionBox__left__info" {...animatedItem[1]}></div>
+        </div>
+      </SectionBox>
+      <SectionBox imgUrl="/assets/img/cat2.jpg" p="8%">
+        <div className="sectionBox__left">
+          <div className="sectionBox__left__info" {...animatedItem[7]}></div>
+        </div>
+        <div className="sectionBox__right">
+          <div className="sectionBox__right__info" {...animatedItem[6]}>
+            집에 고양이가 온지 어느덧 5년...
+          </div>
+        </div>
+      </SectionBox>
+      <SectionBox imgUrl="/assets/img/cat6.jpg" p="25%">
+        <div className="sectionBox__right">
+          <div className="sectionBox__right__info" {...animatedItem[5]}>
+            어머니가 말씀하셨다. <br />
+            너없인 살아도 냥냥이 없인 못산다고..
+          </div>
+        </div>
+        <div className="sectionBox__left">
+          <div className="sectionBox__left__info" {...animatedItem[4]}></div>
+        </div>
+      </SectionBox>
+      <SectionBox imgUrl="/assets/img/cat8.jpg" p="8%">
+        <div className="sectionBox__left">
+          <div className="sectionBox__left__info" {...animatedItem[9]}></div>
+        </div>
+        <div className="sectionBox__right">
+          <div className="sectionBox__right__info" {...animatedItem[8]}>
+            고양이는 사랑이다 ❤
+          </div>
         </div>
       </SectionBox>
     </>
