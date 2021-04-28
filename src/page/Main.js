@@ -51,7 +51,9 @@ function Main(props) {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-image: url(${(props) => props.url});
+    background-size: cover;
+    background-repeat: no-repeat;
     .sectionBox__left {
       width: 50%;
       height: 100vh;
@@ -77,17 +79,10 @@ function Main(props) {
       }
     }
   `;
-  const VideoSectionBox = styled.video`
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  `;
 
   return (
     <>
-      <VideoSectionBox autoPlay loop muted="muted">
-        <source src="/assets/video/cat3.mp4" type="video/mp4" />
-      </VideoSectionBox>
+      <SectionBox url="/assets/img/cat7.jpg" />
       <SectionBox imgUrl="/assets/img/cat5.jpg" p="8%">
         <div className="sectionBox__left">
           <div className="sectionBox__left__info" {...animatedItem[3]}></div>
