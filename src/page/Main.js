@@ -100,12 +100,12 @@ function Main(props) {
       </SectionBox>
       <SectionBox imgUrl="/assets/img/cat3.jpg" p="25%">
         <div className="sectionBox__right">
-          <div className="sectionBox__right__info" {...animatedItem[0]}>
+          <div className="sectionBox__right__info" {...animatedItem[1]}>
             그래서 나는 고양이를 데려왔다
           </div>
         </div>
         <div className="sectionBox__left">
-          <div className="sectionBox__left__info" {...animatedItem[1]}></div>
+          <div className="sectionBox__left__info" {...animatedItem[0]}></div>
         </div>
       </SectionBox>
       <SectionBox imgUrl="/assets/img/cat2.jpg" p="8%">
