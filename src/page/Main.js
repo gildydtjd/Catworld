@@ -86,7 +86,7 @@ function Main(props) {
   return (
     <>
       <VideoSectionBox autoPlay loop muted="muted">
-        <source src="/assets/video/cat.mp4" type="video/mp4" />
+        <source src="/assets/video/cat3.mp4" type="video/mp4" />
       </VideoSectionBox>
       <SectionBox imgUrl="/assets/img/cat5.jpg" p="8%">
         <div className="sectionBox__left">
