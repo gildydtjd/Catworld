@@ -2,21 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 function Main(props) {
-  const animatedItem = {
-    0: useScrollFadeIn("left", 2.5, 0.5),
-    1: useScrollFadeIn("right", 2.5, 0.4),
-    2: useScrollFadeIn("left", 2.5, 0.5),
-    3: useScrollFadeIn("right", 2.5, 0.4),
-    4: useScrollFadeIn("left", 2.5, 0.5),
-    5: useScrollFadeIn("right", 2.5, 0.4),
-    6: useScrollFadeIn("left", 2.5, 0.5),
-    7: useScrollFadeIn("right", 2.5, 0.4),
-    8: useScrollFadeIn("left", 2.5, 0.5),
-    9: useScrollFadeIn("right", 2.5, 0.4),
-  };
   const SectionBox = styled.div`
     @media only screen and (max-width: 480px) {
       display: block;
+      background-position-x: center;
+
       .sectionBox__left {
         width: 100% !important;
         height: 70vh !important;
@@ -85,51 +75,81 @@ function Main(props) {
       <SectionBox url="/assets/img/cat7.jpg" />
       <SectionBox imgUrl="/assets/img/cat5.jpg" p="8%">
         <div className="sectionBox__left">
-          <div className="sectionBox__left__info" {...animatedItem[3]}></div>
+          <div
+            className="sectionBox__left__info"
+            {...useScrollFadeIn("right", 2.5, 0.4)}
+          ></div>
         </div>
         <div className="sectionBox__right">
-          <div className="sectionBox__right__info" {...animatedItem[2]}>
+          <div
+            className="sectionBox__right__info"
+            {...useScrollFadeIn("left", 2.5, 0.5)}
+          >
             부모님은 고양이를 싫어하셨다
           </div>
         </div>
       </SectionBox>
       <SectionBox imgUrl="/assets/img/cat3.jpg" p="25%">
         <div className="sectionBox__right">
-          <div className="sectionBox__right__info" {...animatedItem[1]}>
+          <div
+            className="sectionBox__right__info"
+            {...useScrollFadeIn("right", 2.5, 0.4)}
+          >
             그래서 나는 고양이를 데려왔다
           </div>
         </div>
         <div className="sectionBox__left">
-          <div className="sectionBox__left__info" {...animatedItem[0]}></div>
+          <div
+            className="sectionBox__left__info"
+            {...useScrollFadeIn("left", 2.5, 0.5)}
+          ></div>
         </div>
       </SectionBox>
       <SectionBox imgUrl="/assets/img/cat2.jpg" p="8%">
         <div className="sectionBox__left">
-          <div className="sectionBox__left__info" {...animatedItem[7]}></div>
+          <div
+            className="sectionBox__left__info"
+            {...useScrollFadeIn("right", 2.5, 0.4)}
+          ></div>
         </div>
         <div className="sectionBox__right">
-          <div className="sectionBox__right__info" {...animatedItem[6]}>
+          <div
+            className="sectionBox__right__info"
+            {...useScrollFadeIn("left", 2.5, 0.5)}
+          >
             집에 온지 어느덧 5년...
           </div>
         </div>
       </SectionBox>
       <SectionBox imgUrl="/assets/img/cat6.jpg" p="25%">
         <div className="sectionBox__right">
-          <div className="sectionBox__right__info" {...animatedItem[5]}>
+          <div
+            className="sectionBox__right__info"
+            {...useScrollFadeIn("right", 2.5, 0.4)}
+          >
             어머니가 말씀하셨다. <br />
             너없인 살아도 냥냥이 없인 못산다고..
           </div>
         </div>
         <div className="sectionBox__left">
-          <div className="sectionBox__left__info" {...animatedItem[4]}></div>
+          <div
+            className="sectionBox__left__info"
+            {...useScrollFadeIn("left", 2.5, 0.5)}
+          ></div>
         </div>
       </SectionBox>
       <SectionBox imgUrl="/assets/img/cat8.jpg" p="8%">
         <div className="sectionBox__left">
-          <div className="sectionBox__left__info" {...animatedItem[9]}></div>
+          <div
+            className="sectionBox__left__info"
+            {...useScrollFadeIn("right", 2.5, 0.4)}
+          ></div>
         </div>
         <div className="sectionBox__right">
-          <div className="sectionBox__right__info" {...animatedItem[8]}>
+          <div
+            className="sectionBox__right__info"
+            {...useScrollFadeIn("left", 2.5, 0.5)}
+          >
             고양이는 사랑이다 ❤
           </div>
         </div>
