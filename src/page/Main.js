@@ -9,7 +9,10 @@ function Main(props) {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: ${(props) => props.opa};
-
+    display: ${(props) => props.dis};
+    align-items: center;
+    justify-content: center;
+    background-position: center;
     .sectionBox__header {
       width: 100%;
       display: flex;
@@ -52,11 +55,16 @@ function Main(props) {
         height: 430px;
       }
     }
+    .sectionBox__sub3 {
+      background-color: slateblue;
+      width: 80%;
+      height: 90vh;
+    }
   `;
 
   return (
     <>
-      <SectionBox url="/assets/img/cat7.jpg" opa="1">
+      <SectionBox url="/assets/img/cat7.jpg">
         <div className="sectionBox__header">
           <span {...useScrollFadeIn("left", 1, 0.3)}>HOME</span>
           <span {...useScrollFadeIn("left", 1, 0.4)}>ABOUT</span>
@@ -66,15 +74,33 @@ function Main(props) {
       </SectionBox>
       <SectionBox>
         <div className="sectionBox__sub">
-          <div className="sectionBox__sub__info"></div>
-          <div className="sectionBox__sub__info"></div>
-          <div className="sectionBox__sub__info"></div>
+          <div
+            className="sectionBox__sub__info"
+            {...useScrollFadeIn("left", 1, 0.5)}
+          ></div>
+          <div
+            className="sectionBox__sub__info"
+            {...useScrollFadeIn("left", 1, 0.6)}
+          ></div>
+          <div
+            className="sectionBox__sub__info"
+            {...useScrollFadeIn("left", 1, 0.7)}
+          ></div>
         </div>
         <div className="sectionBox__sub2">
-          <div className="sectionBox__sub2__info"></div>
+          <div
+            className="sectionBox__sub2__info"
+            {...useScrollFadeIn("left", 1.5, 0.7)}
+          ></div>
         </div>
       </SectionBox>
-      <SectionBox></SectionBox>
+      <SectionBox url="/assets/img/cat5.jpg"></SectionBox>
+      <SectionBox dis="flex">
+        <div className="sectionBox__sub3">
+          <div className="sectionBox__sub3__info"></div>
+          <div className="sectionBox__sub3__info"></div>
+        </div>
+      </SectionBox>
     </>
   );
 }
