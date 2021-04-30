@@ -1,5 +1,6 @@
 .App {
   justify-content: center;
   align-items: center;
-  font-family: "josefin sans";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    "sans-serif";
 }
