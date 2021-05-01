@@ -32,12 +32,16 @@ function Main(props) {
 
     .sectionBox__sub {
       height: 50vh;
-      background-color: green;
+      background-color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       .sectionBox__sub__info {
+        background-image: url(${(props) => props.infoUrl});
         background-color: pink;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 400px;
         height: 400px;
         margin: 20px;
@@ -72,7 +76,7 @@ function Main(props) {
           <span {...useScrollFadeIn("left", 1, 0.6)}>Q&A</span>
         </div>
       </SectionBox>
-      <SectionBox>
+      <SectionBox infoUrl="/assets/img/cat10.jpg">
         <div className="sectionBox__sub">
           <div
             className="sectionBox__sub__info"
