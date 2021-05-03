@@ -11,8 +11,7 @@ function Photo({ back, duraction, delay, name, age, price }) {
     height: 300px;
     margin: 20px;
     cursor: pointer;
-    :hover {
-    }
+
     .photo__info__box {
       width: 100%;
       height: 20%;

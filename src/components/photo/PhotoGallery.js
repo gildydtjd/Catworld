@@ -9,6 +9,9 @@ function PhotoGallery(props) {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      height: 100%;
+    }
   `;
   const backUrl = [
     {
@@ -80,6 +83,7 @@ function PhotoGallery(props) {
   const photoRender = backUrl.map((props) => {
     return (
       <Photo
+        key={`social-${props.name}`}
         back={props.url}
         duraction={props.duraction}
         delay={props.delay}
