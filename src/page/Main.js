@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
-import PhotoGallery from "../components/PhotoGallery";
+import PhotoGallery from "../components/photo/PhotoGallery";
 function Main(props) {
   const SectionBox = styled.div`
     width: 100%;
@@ -10,7 +10,7 @@ function Main(props) {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: ${(props) => props.opa};
-    display: ${(props) => (props.dis ? props.dis : "inline-block")};
+    display: ${(props) => (props.dis ? props.dis : "flex")};
     align-items: center;
     justify-content: center;
     background-position: center;
@@ -25,7 +25,6 @@ function Main(props) {
         margin-right: 100px;
         font-weight: 800;
         :hover {
-          color: gold;
           cursor: pointer;
         }
       }
@@ -34,7 +33,7 @@ function Main(props) {
 
   return (
     <>
-      <SectionBox url="/assets/img/cat7.jpg">
+      <SectionBox url="/assets/img/cat7.jpg" dis="inline-block">
         <div className="sectionBox__header">
           <span {...useScrollFadeIn("left", 1, 0.3)}>HOME</span>
           <span {...useScrollFadeIn("left", 1, 0.4)}>ABOUT</span>
@@ -45,6 +44,8 @@ function Main(props) {
       <SectionBox>
         <PhotoGallery />
       </SectionBox>
+      <SectionBox url="/assets/img/cat17.jpg"></SectionBox>
+      <SectionBox></SectionBox>
     </>
   );
 }
