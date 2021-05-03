@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
+import PhotoGallery from "../components/PhotoGallery";
 function Main(props) {
   const SectionBox = styled.div`
     width: 100%;
@@ -9,7 +10,7 @@ function Main(props) {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: ${(props) => props.opa};
-    display: ${(props) => props.dis};
+    display: ${(props) => (props.dis ? props.dis : "inline-block")};
     align-items: center;
     justify-content: center;
     background-position: center;
@@ -29,48 +30,6 @@ function Main(props) {
         }
       }
     }
-    p {
-      text-align: center;
-      font-weight: 700;
-      font-size: 50px;
-    }
-
-    .sectionBox__sub {
-      height: 60vh;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .sectionBox__sub2 {
-      height: 100vh;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .sectionBox__sub2__info {
-        background-color: wheat;
-        width: 50%;
-        height: 40vh;
-        color: white;
-      }
-    }
-    .sectionBox__sub3 {
-      background-color: slateblue;
-      width: 80%;
-      height: 90vh;
-    }
-  `;
-  const SectionBOxSUBINFO = styled.div`
-    background-image: url(${(props) => props.infoUrl});
-    background-color: pink;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: ${(props) => (props.width ? props.width : "400px")};
-    height: ${(props) => (props.height ? props.height : "400px")};
-    margin: 20px;
-    border: 2px solid #fff;
   `;
 
   return (
@@ -84,53 +43,7 @@ function Main(props) {
         </div>
       </SectionBox>
       <SectionBox>
-        <p {...useScrollFadeIn("right", 1, 0.3)}>
-          There is everything in the world in a cat's eyes
-        </p>
-        <p {...useScrollFadeIn("right", 1, 0.3)}>
-          Time with a cat is never wasted
-        </p>
-        <div className="sectionBox__sub">
-          <SectionBOxSUBINFO
-            className="sectionBox__sub__info"
-            infoUrl="/assets/img/cat10.jpg"
-            {...useScrollFadeIn("left", 1, 0.5)}
-          ></SectionBOxSUBINFO>
-          <SectionBOxSUBINFO
-            className="sectionBox__sub__info"
-            infoUrl="/assets/img/cat11.jpg"
-            {...useScrollFadeIn("left", 1, 0.6)}
-          ></SectionBOxSUBINFO>
-          <SectionBOxSUBINFO
-            className="sectionBox__sub__info"
-            infoUrl="/assets/img/cat12.jpg"
-            {...useScrollFadeIn("left", 1, 0.7)}
-          ></SectionBOxSUBINFO>
-        </div>
-        <p {...useScrollFadeIn("right", 1, 0.3)}>
-          There is everything in the world in a cat's eyes
-        </p>
-        <p {...useScrollFadeIn("right", 1, 0.3)}>
-          Time with a cat is never wasted
-        </p>
-      </SectionBox>
-      <SectionBox>
-        <div className="sectionBox__sub2">
-          <SectionBOxSUBINFO
-            className="sectionBox__sub__info"
-            infoUrl="/assets/img/cat2.jpg"
-            width="70%"
-            height="50%"
-            {...useScrollFadeIn("up", 1, 0.5)}
-          ></SectionBOxSUBINFO>
-        </div>
-      </SectionBox>
-      <SectionBox url="/assets/img/cat5.jpg"></SectionBox>
-      <SectionBox dis="flex">
-        <div className="sectionBox__sub3">
-          <div className="sectionBox__sub3__info"></div>
-          <div className="sectionBox__sub3__info"></div>
-        </div>
+        <PhotoGallery />
       </SectionBox>
     </>
   );
