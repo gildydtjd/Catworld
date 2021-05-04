@@ -122,7 +122,7 @@ function Main(props) {
             className="sectionBox__about__info1"
             {...useScrollFadeIn("up", 1, 0.4)}
           >
-            <h2>warning</h2>
+            <h2 style={{ color: "red" }}>warning</h2>
             <p>Catch</p>
             <p>Cats faster than light</p>
           </div>
