@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function Main(props) {
   const SectionBox = styled.div`
     width: 100%;
-    height: 100vh;
+    height: ${(props) => (props.height ? props.height : "100vh")};
     background-image: url(${(props) => props.url});
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,6 +41,11 @@ function Main(props) {
         }
       }
     }
+    .info__h2 {
+      margin-left: 15%;
+      padding: "20px 0px 0px 10px";
+      color: black;
+    }
 
     @media screen and (max-width: 768px) {
       .sectionBox__about {
@@ -60,6 +65,11 @@ function Main(props) {
             font-size: 22px !important;
           }
         }
+      }
+      .info__h2 {
+        margin-left: unset;
+        padding: unset;
+        text-align: center;
       }
     }
   `;
@@ -87,17 +97,9 @@ function Main(props) {
           </div>
         </div>
       </SectionBox>
-      <SectionBox dis="inline-block">
+      <SectionBox dis="inline-block" height="100%">
         <div {...useScrollFadeIn("up", 1, 0.6)}>
-          <h2
-            style={{
-              marginLeft: "15%",
-              padding: "20px 0px 0px 10px",
-              color: "black",
-            }}
-          >
-            New Family Information
-          </h2>
+          <h2 className="info__h2">New Family Information</h2>
         </div>
         <PhotoGallery />
         <Link {...useScrollFadeIn("up", 1, 0.6)} to="/about">
