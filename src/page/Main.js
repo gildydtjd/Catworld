@@ -3,6 +3,8 @@ import styled from "styled-components";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 import PhotoGallery from "../components/photo/PhotoGallery";
 import Header from "../components/header/Header";
+import { Link } from "react-router-dom";
+
 function Main(props) {
   const SectionBox = styled.div`
     width: 100%;
@@ -69,7 +71,7 @@ function Main(props) {
         <div className="sectionBox__about">
           <div
             className="sectionBox__about__info1"
-            {...useScrollFadeIn("right", 1, 0.7)}
+            {...useScrollFadeIn("right", 1, 0.4)}
           >
             <h2>2021</h2>
             <p>Catch</p>
@@ -77,7 +79,7 @@ function Main(props) {
           </div>
           <div
             className="sectionBox__about__info2"
-            {...useScrollFadeIn("right", 1, 0.7)}
+            {...useScrollFadeIn("right", 1, 0.4)}
           >
             <p>The above company is a company that only</p>
             <p>provides high-quality services for cats.</p>
@@ -85,10 +87,52 @@ function Main(props) {
           </div>
         </div>
       </SectionBox>
-      <SectionBox>
+      <SectionBox dis="inline-block">
+        <div {...useScrollFadeIn("up", 1, 0.6)}>
+          <h2
+            style={{
+              marginLeft: "15%",
+              padding: "20px 0px 0px 10px",
+              color: "black",
+            }}
+          >
+            New Family Information
+          </h2>
+        </div>
         <PhotoGallery />
+        <Link {...useScrollFadeIn("up", 1, 0.6)} to="/about">
+          <span
+            style={{
+              textDecoration: "none",
+              float: "right",
+              marginRight: "15%",
+              color: "black",
+            }}
+          >
+            + More{" "}
+          </span>
+        </Link>
       </SectionBox>
-      <SectionBox className="aaa" url="/assets/img/cat17.jpg"></SectionBox>
+      <SectionBox url="/assets/img/cat18.jpg">
+        <div className="sectionBox__about">
+          <div
+            className="sectionBox__about__info1"
+            {...useScrollFadeIn("up", 1, 0.4)}
+          >
+            <h2>warning</h2>
+            <p>Catch</p>
+            <p>Cats faster than light</p>
+          </div>
+          <div
+            className="sectionBox__about__info2"
+            {...useScrollFadeIn("up", 1, 0.4)}
+          >
+            <p>If you bother the cat</p>
+            <p>Faster than light</p>
+            <p>you will be hit by a nyang nyang kick.</p>
+          </div>
+        </div>
+      </SectionBox>
       <SectionBox></SectionBox>
     </>
   );

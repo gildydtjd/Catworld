@@ -9,6 +9,7 @@ function PhotoGallery(props) {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-left: 10%;
     @media screen and (max-width: 768px) {
       height: 100%;
     }
@@ -63,7 +64,7 @@ function PhotoGallery(props) {
       price: "200,000",
     },
     {
-      url: "/assets/img/cat15.jpg",
+      url: "/assets/img/cat19.jpg",
       duraction: 1,
       delay: 1.1,
       name: "장길산",

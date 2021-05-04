@@ -13,6 +13,11 @@ function Photo({ back, duraction, delay, name, age, price }) {
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 12px 12px 2px 1px #c9c9c9;
+    color: #fff;
+    :hover {
+      background-size: 180%;
+      color: gold;
+    }
     .photo__info__box {
       width: 100%;
       height: 20%;
@@ -21,7 +26,6 @@ function Photo({ back, duraction, delay, name, age, price }) {
       align-items: center;
       margin-top: 80%;
       span {
-        color: #fff;
         margin: 10px;
         font-weight: 600;
       }
