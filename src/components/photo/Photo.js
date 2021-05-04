@@ -30,6 +30,11 @@ function Photo({ back, duraction, delay, name, age, price }) {
         font-weight: 600;
       }
     }
+    @media screen and (max-width: 768px) {
+      :hover {
+        background-size: 120%;
+      }
+    }
   `;
   return (
     <PhotoDiv {...useScrollFadeIn("left", duraction, delay)}>
