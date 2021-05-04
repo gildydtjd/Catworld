@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 import PhotoGallery from "../components/photo/PhotoGallery";
+import Header from "../components/header/Header";
 function Main(props) {
   const SectionBox = styled.div`
     width: 100%;
@@ -15,30 +16,47 @@ function Main(props) {
     justify-content: center;
     background-position: center;
 
-    @media screen and (max-width: 768px) {
-      .sectionBox__header {
-        flex-direction: column;
-        text-align: center;
-        .sectionBox__header__span {
-          margin-right: 0px;
-          padding: 20px 20px;
-          background-color: #c9c9c9;
-          border: 1px solid #fff;
+    .sectionBox__about {
+      width: 50%;
+      height: 50%;
+      margin-left: 8%;
+      margin-top: 10%;
+      .sectionBox__about__info1 {
+        color: #fff;
+        h2 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 40px;
+          font-weight: 600;
+        }
+      }
+      .sectionBox__about__info2 {
+        color: #fff;
+        p {
+          font-size: 22px;
+          opacity: 0.6;
         }
       }
     }
-    .sectionBox__header {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      span {
-        color: white;
-        padding: 30px 20px;
-        font-size: 22px;
-        margin-right: 100px;
-        font-weight: 800;
-        :hover {
-          cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      .sectionBox__about {
+        width: 80% !important;
+        margin-left: 8%;
+        margin-top: 60% !important;
+        .sectionBox__about__info1 {
+          h2 {
+            font-size: 10px !important;
+          }
+          p {
+            font-size: 20px !important;
+          }
+        }
+        .sectionBox__about__info2 {
+          p {
+            font-size: 22px !important;
+          }
         }
       }
     }
@@ -47,31 +65,24 @@ function Main(props) {
   return (
     <>
       <SectionBox url="/assets/img/cat7.jpg" dis="inline-block">
-        <div className="sectionBox__header">
-          <span
-            className="sectionBox__header__span"
-            {...useScrollFadeIn("left", 1, 0.3)}
+        <Header />
+        <div className="sectionBox__about">
+          <div
+            className="sectionBox__about__info1"
+            {...useScrollFadeIn("right", 1, 0.7)}
           >
-            HOME
-          </span>
-          <span
-            className="sectionBox__header__span"
-            {...useScrollFadeIn("left", 1, 0.4)}
+            <h2>2021</h2>
+            <p>Catch</p>
+            <p>High Class Cat</p>
+          </div>
+          <div
+            className="sectionBox__about__info2"
+            {...useScrollFadeIn("right", 1, 0.7)}
           >
-            ABOUT
-          </span>
-          <span
-            className="sectionBox__header__span"
-            {...useScrollFadeIn("left", 1, 0.5)}
-          >
-            SHOP
-          </span>
-          <span
-            className="sectionBox__header__span"
-            {...useScrollFadeIn("left", 1, 0.6)}
-          >
-            Q&A
-          </span>
+            <p>The above company is a company that only</p>
+            <p>provides high-quality services for cats.</p>
+            <p>If you have no love for cats, please return.</p>
+          </div>
         </div>
       </SectionBox>
       <SectionBox>

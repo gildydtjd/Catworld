@@ -11,7 +11,8 @@ function Photo({ back, duraction, delay, name, age, price }) {
     height: 300px;
     margin: 20px;
     cursor: pointer;
-
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px #c9c9c9;
     .photo__info__box {
       width: 100%;
       height: 20%;
@@ -22,6 +23,7 @@ function Photo({ back, duraction, delay, name, age, price }) {
       span {
         color: #fff;
         margin: 10px;
+        font-weight: 600;
       }
     }
   `;
