@@ -109,9 +109,10 @@ function Main(props) {
               float: "right",
               marginRight: "15%",
               color: "black",
+              marginBottom: "10px",
             }}
           >
-            + More{" "}
+            + More
           </span>
         </Link>
       </SectionBox>
