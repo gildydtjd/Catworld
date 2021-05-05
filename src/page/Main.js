@@ -42,9 +42,8 @@ function Main(props) {
       }
     }
     .info__h2 {
-      margin-left: 15%;
-      padding: "20px 0px 0px 10px";
-      color: black;
+      margin: 0;
+      padding: 30px 300px 0px;
     }
 
     @media screen and (max-width: 768px) {
@@ -70,6 +69,7 @@ function Main(props) {
         margin-left: unset;
         padding: unset;
         text-align: center;
+        padding: 40px 0px 20px;
       }
     }
   `;
