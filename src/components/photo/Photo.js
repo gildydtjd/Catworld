@@ -32,7 +32,7 @@ function Photo({ back, duraction, delay, name, age, price }) {
     }
     @media screen and (max-width: 768px) {
       :hover {
-        background-size: 120%;
+        background-size: 150%;
       }
     }
   `;

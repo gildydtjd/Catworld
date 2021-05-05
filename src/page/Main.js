@@ -51,7 +51,7 @@ function Main(props) {
       .sectionBox__about {
         width: 80% !important;
         margin-left: 8%;
-        margin-top: 60% !important;
+        margin-top: 70% !important;
         .sectionBox__about__info1 {
           h2 {
             font-size: 10px !important;
@@ -62,7 +62,7 @@ function Main(props) {
         }
         .sectionBox__about__info2 {
           p {
-            font-size: 22px !important;
+            font-size: 15px !important;
           }
         }
       }
