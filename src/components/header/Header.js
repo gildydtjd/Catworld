@@ -35,13 +35,13 @@ function Header(props) {
       <Link to="/" className="sectionBox__header__link">
         <span>HOME</span>
       </Link>
-      <Link to="/about" className="sectionBox__header__link">
+      <Link to="/" className="sectionBox__header__link">
         <span>ABOUT</span>
       </Link>
-      <Link to="/shop" className="sectionBox__header__link">
+      <Link to="/" className="sectionBox__header__link">
         <span>SHOP</span>
       </Link>
-      <Link to="/qna" className="sectionBox__header__link">
+      <Link to="/" className="sectionBox__header__link">
         <span>Q&A</span>
       </Link>
     </HeaderDiv>
