@@ -40,36 +40,24 @@ const backUrl = [
 ];
 const backUrl2 = [
   {
-    url: "/assets/img/cat5.jpg",
+    url: "/assets/img/toy1.jpg",
     duraction: 1,
     delay: 0.9,
-    name: "세종대왕",
-    age: 4,
-    price: "200,000",
   },
   {
-    url: "/assets/img/cat14.jpg",
+    url: "/assets/img/toy2.jpg",
     duraction: 1,
     delay: 1.0,
-    name: "일지매",
-    age: 4,
-    price: "200,000",
   },
   {
-    url: "/assets/img/cat19.jpg",
+    url: "/assets/img/toy3.jpg",
     duraction: 1,
     delay: 1.1,
-    name: "장길산",
-    age: 4,
-    price: "200,000",
   },
   {
-    url: "/assets/img/cat16.jpg",
+    url: "/assets/img/toy4.jpg",
     duraction: 1,
     delay: 1.2,
-    name: "임꺽정",
-    age: 4,
-    price: "200,000",
   },
 ];
 
@@ -96,9 +84,9 @@ function Main(props) {
     }
     .sectionBox__about {
       width: 50%;
-      height: 50%;
+      height: 40%;
       margin-left: ${(props) => (props.marginL ? props.marginL : "8%")};
-      margin-top: ${(props) => (props.marginT ? props.marginT : "10%")};
+      margin-top: ${(props) => (props.marginT ? props.marginT : "15%")};
       text-align: ${(props) => (props.align ? props.align : "none")};
       .sectionBox__about__info1 {
         color: ${(props) => (props.color ? props.color : "#fff")};
@@ -162,6 +150,7 @@ function Main(props) {
             className="sectionBox__about__info1"
             {...useScrollFadeIn("right", 1, 0.4)}
           >
+            <h2>2021</h2>
             <p>Catch</p>
             <p>High Class Cat</p>
           </div>
@@ -184,32 +173,33 @@ function Main(props) {
         hheight="100%"
         marginTT="10%"
       >
-        <div {...useScrollFadeIn("up", 1, 0.6)}>
-          <h2 className="info__h2">New Family Information</h2>
-        </div>
-        <PhotoGallery arrays={backUrl} />
-        <Link {...useScrollFadeIn("up", 1, 0.6)} to="/about">
-          <span className="more">+ More</span>
-        </Link>
         <div className="sectionBox__about">
           <div
             className="sectionBox__about__info1"
             {...useScrollFadeIn("right", 1, 0.4)}
           >
-            <p style={{ color: "#c9c9c9" }}>Catch</p>
+            <p style={{ color: "#c9c9c9" }}>★ Event Catch</p>
             <p>High Class Cat</p>
           </div>
           <div
             className="sectionBox__about__info2"
             {...useScrollFadeIn("right", 1, 0.4)}
           >
-            <p>Countless cats are looking for a butler.</p>
-            <p>Become a lovely cat's butler.</p>
-            <p style={{ color: "red", fontWeight: "600" }}>
-              ※ only those who will spend their entire lives together
-            </p>
+            <p>Cats want many people to like them I don't want.</p>
+            <p>But only the ones he chooses I just want you to love me.</p>
+            <p style={{ color: "red", fontWeight: "600" }}>-Helen Thomas</p>
           </div>
         </div>
+        <div {...useScrollFadeIn("up", 1, 0.6)}>
+          <h2 className="info__h2" style={{ color: "green" }}>
+            2021
+          </h2>
+          <h2 className="info__h2">New Family Information</h2>
+        </div>
+        <PhotoGallery arrays={backUrl} />
+        <Link {...useScrollFadeIn("up", 1, 0.6)} to="/about">
+          <span className="more">+ More</span>
+        </Link>
       </SectionBox>
 
       <SectionBox

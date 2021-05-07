@@ -18,33 +18,14 @@ function Photo({ back, duraction, delay, name, age, price }) {
       background-size: 180%;
       color: gold;
     }
-    .photo__info__box {
-      width: 100%;
-      height: 20%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 80%;
-      span {
-        margin: 10px;
-        font-weight: 600;
-      }
-    }
+
     @media screen and (max-width: 768px) {
       :hover {
         background-size: 150%;
       }
     }
   `;
-  return (
-    <PhotoDiv {...useScrollFadeIn("left", duraction, delay)}>
-      <div className="photo__info__box">
-        <span>{name}</span>
-        <span>{age}살</span>
-        <span>${price}</span>
-      </div>
-    </PhotoDiv>
-  );
+  return <PhotoDiv {...useScrollFadeIn("left", duraction, delay)}></PhotoDiv>;
 }
 
 export default Photo;
