@@ -4,6 +4,7 @@ import useScrollFadeIn from "../hooks/useScrollFadeIn";
 import PhotoGallery from "../components/photo/PhotoGallery";
 import Header from "../components/header/Header";
 import { Link } from "react-router-dom";
+import Footer from "../components/footer/Footer";
 const backUrl = [
   {
     url: "/assets/img/cat13.jpg",
@@ -257,6 +258,7 @@ function Main(props) {
           </div>
         </div>
       </SectionBox>
+      <Footer />
     </>
   );
 }
