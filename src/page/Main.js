@@ -137,7 +137,8 @@ function Main(props) {
         margin-left: unset;
         padding: unset;
         text-align: center;
-        padding: 40px 0px 20px;
+        padding: 20px 0px 0px;
+        font-size: 20px;
       }
     }
   `;
