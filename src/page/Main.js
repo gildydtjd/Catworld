@@ -189,7 +189,9 @@ function Main(props) {
           >
             <p>Cats want many people to like them I don't want.</p>
             <p>But only the ones he chooses I just want you to love me.</p>
-            <p style={{ color: "red", fontWeight: "600" }}>-Helen Thomas</p>
+            <p style={{ color: "red", fontWeight: "600", opacity: "0.5" }}>
+              Helen Thomas
+            </p>
           </div>
         </div>
         <div {...useScrollFadeIn("up", 1, 0.6)}>
@@ -234,7 +236,9 @@ function Main(props) {
           >
             <p>Be alone and play with the lonely cat.</p>
             <p>They don't cry at night and sleep early.</p>
-            <p style={{ color: "red", fontWeight: "600" }}>※ I'm too hard</p>
+            <p style={{ color: "red", fontWeight: "600", opacity: "0.5" }}>
+              ※ I'm too hard
+            </p>
           </div>
         </div>
       </SectionBox>
