@@ -236,7 +236,7 @@ function Main(props) {
           >
             <p>Be alone and play with the lonely cat.</p>
             <p>They don't cry at night and sleep early.</p>
-            <p style={{ color: "red", fontWeight: "600", opacity: "0.5" }}>
+            <p style={{ color: "gold", fontWeight: "600", opacity: "0.5" }}>
               ※ I'm too hard
             </p>
           </div>
