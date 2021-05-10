@@ -32,16 +32,16 @@ function Header(props) {
   `;
   return (
     <HeaderDiv>
-      <Link className="sectionBox__header__link">
-        <span>HOME</span>
+      <Link to="/company" className="sectionBox__header__link">
+        <span>COMPANY</span>
       </Link>
-      <Link className="sectionBox__header__link">
+      <Link to="/about" className="sectionBox__header__link">
         <span>ABOUT</span>
       </Link>
-      <Link className="sectionBox__header__link">
+      <Link to="/shop" className="sectionBox__header__link">
         <span>SHOP</span>
       </Link>
-      <Link className="sectionBox__header__link">
+      <Link to="/qna" className="sectionBox__header__link">
         <span>Q&A</span>
       </Link>
     </HeaderDiv>

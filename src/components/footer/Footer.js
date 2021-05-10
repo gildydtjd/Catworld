@@ -33,7 +33,7 @@ function Footer(props) {
   return (
     <FooterDiv>
       <ul>
-        <li>Home</li>
+        <li>Company</li>
         <li>ㆍ</li>
         <li>About</li>
         <li>ㆍ</li>

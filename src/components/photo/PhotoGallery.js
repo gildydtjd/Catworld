@@ -30,10 +30,10 @@ function PhotoGallery({ arrays }) {
     }
   `;
 
-  const photoRender = photoArray.map((props) => {
+  const photoRender = photoArray.map((props, index) => {
     return (
       <Photo
-        key={`social-${props.name}`}
+        key={index}
         back={props.url}
         duraction={props.duraction}
         delay={props.delay}
