@@ -31,6 +31,23 @@ function Company(props) {
         }
       }
     }
+    @media screen and (max-width: 768px) {
+      height: ${(props) => (props.hheight ? props.hheight : "100vh")};
+      .company__about {
+        width: 60% !important;
+        margin-left: 8%;
+        margin-top: ${(props) => (props.marginTT ? props.marginTT : "80%")};
+
+        .company__about__info {
+          h2 {
+            font-size: 20px !important;
+          }
+          p {
+            font-size: 15px !important;
+          }
+        }
+      }
+    }
   `;
 
   return (
@@ -52,7 +69,7 @@ function Company(props) {
           </div>
         </div>
       </SectionBox>
-      <SectionBox dis="block" height="100%">
+      <SectionBox dis="inline-block" height="100%">
         <CompanyHistoryBox />
       </SectionBox>
       <Footer />

@@ -7,6 +7,7 @@ function Footer(props) {
     padding: 55px 0 45px;
     background-color: #252525;
     position: relative;
+
     .sectionBox__footer__link {
       text-decoration: none;
       color: #888;
@@ -33,7 +34,15 @@ function Footer(props) {
       text-align: center;
     }
     @media screen and (max-width: 768px) {
-      font-size: 13px;
+      ul {
+        padding: 0;
+      }
+      li {
+        margin-right: 0px;
+      }
+      .sectionBox__footer__link {
+        font-size: 12px;
+      }
     }
   `;
   return (

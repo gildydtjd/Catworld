@@ -11,6 +11,12 @@ function CompanyHistoryBox(props) {
       font-size: 50px;
       opacity: 0.8;
     }
+
+    @media screen and (max-width: 768px) {
+      h2 {
+        font-size: 30px !important;
+      }
+    }
   `;
   const history = [
     {

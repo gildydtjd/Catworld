@@ -5,7 +5,6 @@ import useScrollFadeIn from "../../hooks/useScrollFadeIn";
 function CompanyHistory({ photo, day, about }) {
   const CompanyDiv = styled.div`
     color: black;
-    border: 2px solid #fff;
     text-align: center;
     padding: 40px 0px 40px 0px;
     width: 90%;
@@ -13,6 +12,12 @@ function CompanyHistory({ photo, day, about }) {
     justify-content: center;
     align-items: center;
     margin-left: 5%;
+    @media screen and (max-width: 768px) {
+      padding: 20px 0px;
+      span {
+        font-size: 15px !important;
+      }
+    }
     span {
       font-size: 20px;
     }
@@ -26,6 +31,12 @@ function CompanyHistory({ photo, day, about }) {
     background-repeat: no-repeat;
     border-radius: 50%;
     margin-right: 5%;
+    background-position: center;
+
+    @media screen and (max-width: 768px) {
+      width: 100px;
+      height: 100px;
+    }
   `;
   return (
     <CompanyDiv {...useScrollFadeIn("right", 0.7, 0.5)}>
