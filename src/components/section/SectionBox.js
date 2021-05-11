@@ -73,7 +73,6 @@ function SectionBox(props) {
     align-items: center;
     justify-content: center;
     background-position: center;
-
     .more {
       text-decoration: none;
       float: right;

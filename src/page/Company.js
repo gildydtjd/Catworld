@@ -1,5 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import CompanyHistoryBox from "../components/companyHistory/CompanyHistoryBox";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
+import useScrollFadeIn from "../hooks/useScrollFadeIn";
 function Company(props) {
   const SectionBox = styled.div`
     width: 100%;
@@ -13,17 +17,45 @@ function Company(props) {
     justify-content: center;
     background-position: center;
     .company__about {
-      background-color: green;
-      width: 50%;
-      height: 50%;
+      width: 80%;
+      height: 80%;
+      color: #fff;
+      margin-left: 10%;
+      .company__about__info {
+        margin-top: 25%;
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 25px;
+        }
+      }
     }
   `;
 
   return (
     <>
-      <SectionBox url="/assets/img/cat13.jpg">
-        <div className="company__about"></div>
+      <SectionBox url="/assets/img/cat13.jpg" dis="block">
+        <Header />
+        <div className="company__about">
+          <div
+            className="company__about__info"
+            {...useScrollFadeIn("right", 1, 0.5)}
+          >
+            <h2>Catch</h2>
+            <p>The above company was founded on July 31, 1993</p>
+            <p> and currently has a surplus of 2 billion won in sales</p>
+            <p>
+              Catch is a promising company with support from many large
+              companies
+            </p>
+          </div>
+        </div>
       </SectionBox>
+      <SectionBox dis="block" height="100%">
+        <CompanyHistoryBox />
+      </SectionBox>
+      <Footer />
     </>
   );
 }
