@@ -32,6 +32,9 @@ function Header(props) {
   `;
   return (
     <HeaderDiv>
+      <Link to="/" className="sectionBox__header__link">
+        <span>HOME</span>
+      </Link>
       <Link to="/company" className="sectionBox__header__link">
         <span>COMPANY</span>
       </Link>
@@ -40,9 +43,6 @@ function Header(props) {
       </Link>
       <Link to="/shop" className="sectionBox__header__link">
         <span>SHOP</span>
-      </Link>
-      <Link to="/qna" className="sectionBox__header__link">
-        <span>Q&A</span>
       </Link>
     </HeaderDiv>
   );

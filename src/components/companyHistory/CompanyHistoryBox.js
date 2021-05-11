@@ -5,6 +5,12 @@ import CompanyHistory from "./CompanyHistory";
 function CompanyHistoryBox(props) {
   const CompanyHistoryBoxDiv = styled.div`
     width: 100%;
+    h2 {
+      text-align: center;
+      padding: 20px;
+      font-size: 50px;
+      opacity: 0.8;
+    }
   `;
   const history = [
     {
@@ -67,7 +73,12 @@ function CompanyHistoryBox(props) {
     );
   });
 
-  return <CompanyHistoryBoxDiv>{historyRender}</CompanyHistoryBoxDiv>;
+  return (
+    <CompanyHistoryBoxDiv>
+      <h2>Catch History</h2>
+      {historyRender}
+    </CompanyHistoryBoxDiv>
+  );
 }
 
 export default CompanyHistoryBox;

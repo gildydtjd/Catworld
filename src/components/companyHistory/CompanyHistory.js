@@ -28,7 +28,7 @@ function CompanyHistory({ photo, day, about }) {
     margin-right: 5%;
   `;
   return (
-    <CompanyDiv {...useScrollFadeIn("right", 1, 0.7)}>
+    <CompanyDiv {...useScrollFadeIn("right", 0.7, 0.5)}>
       <Photo />
       <span style={{ marginRight: "20px" }}>{day}</span>
       <span style={{ opacity: 0.5 }}>{about}</span>
