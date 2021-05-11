@@ -1,11 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Footer(props) {
   const FooterDiv = styled.div`
     padding: 55px 0 45px;
     background-color: #252525;
     position: relative;
+    .sectionBox__footer__link {
+      text-decoration: none;
+      color: #888;
+      font-size: 15px;
+    }
     ul,
     li {
       list-style: none;
@@ -33,15 +39,32 @@ function Footer(props) {
   return (
     <FooterDiv>
       <ul>
-        <li>Company</li>
+        <Link
+          to="/"
+          className="sectionBox__footer__link"
+          onclick="window.scrollTo(0,0)"
+        >
+          <li>Home</li>
+        </Link>
         <li>ㆍ</li>
-        <li>About</li>
+
+        <Link to="/company" className="sectionBox__footer__link">
+          <li>COMPANY</li>
+        </Link>
         <li>ㆍ</li>
-        <li>Shop</li>
+
+        <Link to="/about" className="sectionBox__footer__link">
+          <li>ABOUT</li>
+        </Link>
         <li>ㆍ</li>
-        <li>Q&A</li>
-        <li>ㆍ</li>
-        <li>Contact</li>
+
+        <Link to="/shop" className="sectionBox__footer__link">
+          <li>SHOP</li>
+          <li>ㆍ</li>
+        </Link>
+        <Link to="/" className="sectionBox__footer__link">
+          <li>Contact</li>
+        </Link>
       </ul>
       <p>©2020 Catch Company - Dragon gil</p>
     </FooterDiv>
