@@ -20,48 +20,48 @@ function CompanyHistoryBox(props) {
   `;
   const history = [
     {
-      photo: "/assets/img/history1.jpg",
+      photo: "/assets/img/history/history1.jpg",
       day: "1993.07,31",
       about: "Washing the cat",
     },
     {
-      photo: "/assets/img/history2.jpg",
+      photo: "/assets/img/history/history2.jpg",
 
       day: "1995.08.20",
       about: "Give a cat snack",
     },
     {
-      photo: "/assets/img/history3.jpg",
+      photo: "/assets/img/history/history3.jpg",
 
       day: "2000.09.27",
       about: "Play with a cat",
     },
     {
-      photo: "/assets/img/history4.jpg",
+      photo: "/assets/img/history/history4.jpg",
 
       day: "2005.04.24",
       about: "Scolding cats",
     },
     {
-      photo: "/assets/img/history5.jpg",
+      photo: "/assets/img/history/history5.jpg",
 
       day: "2010.12.23",
       about: "Cat bath",
     },
     {
-      photo: "/assets/img/history6.jpg",
+      photo: "/assets/img/history/history6.jpg",
 
       day: "2015.11.20",
       about: "Buy Cat Tower",
     },
     {
-      photo: "/assets/img/history7.jpg",
+      photo: "/assets/img/history/history7.jpg",
 
       day: "2018.08,03",
       about: "Cat crying every night",
     },
     {
-      photo: "/assets/img/history8.jpg",
+      photo: "/assets/img/history/history8.jpg",
 
       day: "2021.05.11",
       about: "The cat turned 6 years old",

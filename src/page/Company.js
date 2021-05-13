@@ -52,7 +52,7 @@ function Company(props) {
 
   return (
     <>
-      <SectionBox url="/assets/img/cat13.jpg" dis="block">
+      <SectionBox url="/assets/img/cat/cat13.jpg" dis="block">
         <Header />
         <div className="company__about">
           <div

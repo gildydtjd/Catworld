@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Footer from "../footer/Footer";
 const backUrl = [
   {
-    url: "/assets/img/cat13.jpg",
+    url: "/assets/img/cat/cat13.jpg",
     duraction: 1,
     delay: 0.5,
     name: "이순신",
@@ -15,7 +15,7 @@ const backUrl = [
     price: "200,000",
   },
   {
-    url: "/assets/img/cat10.jpg",
+    url: "/assets/img/cat/cat10.jpg",
     duraction: 1,
     delay: 0.6,
     name: "곽재우",
@@ -23,7 +23,7 @@ const backUrl = [
     price: "200,000",
   },
   {
-    url: "/assets/img/cat11.jpg",
+    url: "/assets/img/cat/cat11.jpg",
     duraction: 1,
     delay: 0.7,
     name: "김유신",
@@ -31,7 +31,7 @@ const backUrl = [
     price: "200,000",
   },
   {
-    url: "/assets/img/cat12.jpg",
+    url: "/assets/img/cat/cat12.jpg",
     duraction: 1,
     delay: 0.8,
     name: "이이",
@@ -41,22 +41,22 @@ const backUrl = [
 ];
 const backUrl2 = [
   {
-    url: "/assets/img/toy1.jpg",
+    url: "/assets/img/toy/toy1.jpg",
     duraction: 1,
     delay: 0.9,
   },
   {
-    url: "/assets/img/toy2.jpg",
+    url: "/assets/img/toy/toy2.jpg",
     duraction: 1,
     delay: 1.0,
   },
   {
-    url: "/assets/img/toy3.jpg",
+    url: "/assets/img/toy/toy3.jpg",
     duraction: 1,
     delay: 1.1,
   },
   {
-    url: "/assets/img/toy4.jpg",
+    url: "/assets/img/toy/toy4.jpg",
     duraction: 1,
     delay: 1.2,
   },
@@ -143,7 +143,7 @@ function SectionBox(props) {
 
   return (
     <>
-      <SectionBox url="/assets/img/cat7.jpg" dis="inline-block">
+      <SectionBox url="/assets/img/cat/cat7.jpg" dis="inline-block">
         <Header />
         <div className="sectionBox__about">
           <div
@@ -241,7 +241,7 @@ function SectionBox(props) {
         </div>
       </SectionBox>
 
-      <SectionBox url="/assets/img/cat18.jpg">
+      <SectionBox url="/assets/img/cat/cat18.jpg">
         <div className="sectionBox__about">
           <div
             className="sectionBox__about__info1"
