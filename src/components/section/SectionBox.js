@@ -73,6 +73,7 @@ function SectionBox(props) {
     align-items: center;
     justify-content: center;
     background-position: center;
+
     .more {
       text-decoration: none;
       float: right;
@@ -89,6 +90,7 @@ function SectionBox(props) {
       text-align: ${(props) => (props.align ? props.align : "none")};
       .sectionBox__about__info1 {
         color: ${(props) => (props.color ? props.color : "#fff")};
+
         h2 {
           font-size: 15px;
         }

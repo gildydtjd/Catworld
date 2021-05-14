@@ -59,7 +59,7 @@ function Company(props) {
             className="company__about__info"
             {...useScrollFadeIn("right", 1, 0.5)}
           >
-            <h2>Catch</h2>
+            <h2>Catch Company</h2>
             <p>The above company was founded on July 31, 1993</p>
             <p> and currently has a surplus of 2 billion won in sales</p>
             <p>

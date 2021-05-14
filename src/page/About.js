@@ -16,16 +16,19 @@ function About(props) {
     color: #fff;
 
     background-position: center;
-    .about__info {
-      width: 100%;
-      text-align: center;
+    .company__about {
+      width: 80%;
       height: 80%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      h2 {
-        font-size: 150px;
-        text-shadow: 10px 5px 10px #000000;
+      color: #fff;
+      margin-left: 10%;
+      .company__about__info {
+        margin-top: 25%;
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 25px;
+        }
       }
     }
   `;
@@ -33,13 +36,19 @@ function About(props) {
     <>
       <SectionBox url="/assets/img/cat/cat19.jpg" dis="block">
         <Header />
-        <div className="about__info" {...useScrollFadeIn("right", 1, 0.5)}>
-          <h2 style={{ color: "red" }}>A</h2>
-          <h2 style={{ color: "yellow" }}>b</h2>
-          <h2 style={{ color: "blue" }}>o</h2>
-          <h2 style={{ color: "orange" }}>u</h2>
-          <h2 style={{ color: "aqua" }}>t</h2>
-          <h2 style={{ color: "green" }}>!</h2>
+        <div className="company__about">
+          <div
+            className="company__about__info"
+            {...useScrollFadeIn("right", 1, 0.5)}
+          >
+            <h2>Catch About</h2>
+            <p>The above company was founded on July 31, 1993</p>
+            <p> and currently has a surplus of 2 billion won in sales</p>
+            <p>
+              Catch is a promising company with support from many large
+              companies
+            </p>
+          </div>
         </div>
       </SectionBox>
       <SectionBox></SectionBox>
