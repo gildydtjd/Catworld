@@ -23,6 +23,7 @@ function Header(props) {
 
     @media screen and (max-width: 768px) {
       text-align: center;
+      justify-content: center;
       .sectionBox__header__link {
         font-size: 13px !important;
         margin-right: unset !important;
