@@ -134,9 +134,10 @@ function SectionBox(props) {
       display: inline-block;
       height: 100%;
       .sectionBox__about__box__img {
+        height: 70% !important;
         width: 70% !important;
-        height: 80%;
         margin-left: 15%;
+        border-radius: 10px;
       }
       .sectionBox__about__box {
         width: 100%;
@@ -156,13 +157,14 @@ function SectionBox(props) {
         }
         .sectionBox__about__box__info2 {
           p {
-            font-size: 5px !important;
+            font-size: 3px !important;
           }
         }
         .sectionBox__about__box__info3 {
           padding: unset;
           li {
-            font-size: 5px !important;
+            font-size: 10px !important;
+            line-height: 40px;
           }
           .info_box {
             margin: unset;
