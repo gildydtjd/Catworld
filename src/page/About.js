@@ -12,10 +12,10 @@ function About(props) {
     background-repeat: no-repeat;
     opacity: ${(props) => props.opa};
     display: ${(props) => (props.dis ? props.dis : "flex")};
+    background-position: center;
     align-items: center;
     color: #fff;
 
-    background-position: center;
     .company__about {
       width: 80%;
       height: 80%;
@@ -28,6 +28,23 @@ function About(props) {
         }
         p {
           font-size: 25px;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      height: ${(props) => (props.hheight ? props.hheight : "100vh")};
+      .company__about {
+        width: 60% !important;
+        margin-left: 8%;
+        margin-top: ${(props) => (props.marginTT ? props.marginTT : "80%")};
+
+        .company__about__info {
+          h2 {
+            font-size: 20px !important;
+          }
+          p {
+            font-size: 15px !important;
+          }
         }
       }
     }
