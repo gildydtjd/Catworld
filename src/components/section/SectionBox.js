@@ -62,6 +62,123 @@ import Footer from "../footer/Footer";
 //   },
 // ];
 function SectionBox(props) {
+  const SectionBox2 = styled.div`
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sectionBox__about__box {
+      width: 30%;
+      height: 80%;
+      padding: 20px 20px;
+      margin: 0px 20px;
+      .sectionBox__about__box__info1 {
+        margin-top: 20%;
+        h2 {
+          font-size: 20px;
+          opacity: 0.7;
+        }
+        p {
+          font-size: 30px;
+          font-weight: 600;
+        }
+      }
+      .sectionBox__about__box__info2 {
+        p {
+          font-size: 20px;
+          opacity: 0.7;
+        }
+      }
+      .sectionBox__about__box__info3 {
+        height: 20%;
+        padding: 40px 20px;
+        li {
+          font-size: 20px;
+          height: 2.5rem;
+          opacity: 0.7;
+        }
+        .info_box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px 0px;
+          width: 70%;
+          .info {
+            text-decoration: none;
+            border: 2px solid #c9c9c9;
+            padding: 3px 7px;
+            background-color: #c9c9c9;
+            color: black;
+            font-weight: 600;
+            border-radius: 5px;
+          }
+          .info:hover {
+            background-color: #fff;
+            color: green;
+            border: 1px solid green;
+          }
+        }
+      }
+      .sectionBox__about__box__img {
+        width: 100%;
+        height: 100%;
+        background-image: url("/assets/img/history/history7.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      display: inline-block;
+      height: 100%;
+      .sectionBox__about__box__img {
+        width: 70% !important;
+        height: 80%;
+        margin-left: 15%;
+      }
+      .sectionBox__about__box {
+        width: 100%;
+        height: 35vh;
+        padding: unset;
+        margin: unset;
+        margin-bottom: 10px;
+        text-align: center;
+        .sectionBox__about__box__info1 {
+          margin-top: unset;
+          h2 {
+            font-size: 5px !important;
+          }
+          p {
+            font-size: 5px !important;
+          }
+        }
+        .sectionBox__about__box__info2 {
+          p {
+            font-size: 5px !important;
+          }
+        }
+        .sectionBox__about__box__info3 {
+          padding: unset;
+          li {
+            font-size: 5px !important;
+          }
+          .info_box {
+            margin: unset;
+            text-align: center;
+            width: 100%;
+
+            .info {
+              padding: unset;
+              font-size: 5px !important;
+            }
+          }
+        }
+      }
+    }
+  `;
+
   const SectionBox = styled.div`
     width: 100%;
     height: ${(props) => (props.height ? props.height : "100vh")};
@@ -154,70 +271,41 @@ function SectionBox(props) {
         }
       }
     }
-    .sectionBox__about__box {
-      width: 30%;
-      height: 80%;
-      padding: 20px 20px;
-      margin: 0px 20px;
-      .sectionBox__about__box__info1 {
-        margin-top: 20%;
-        h2 {
-          font-size: 20px;
-          opacity: 0.7;
-        }
-        p {
-          font-size: 30px;
-          font-weight: 600;
-        }
-      }
-      .sectionBox__about__box__info2 {
-        p {
-          font-size: 20px;
-          opacity: 0.7;
-        }
-      }
-      .sectionBox__about__box__info3 {
-        height: 20%;
-        padding: 40px 20px;
-        li {
-          font-size: 20px;
-          height: 2.5rem;
-          opacity: 0.7;
-        }
-        .info_box {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 30px 0px;
-          width: 70%;
-          .info {
-            text-decoration: none;
-            border: 2px solid #c9c9c9;
-            padding: 3px 7px;
-            background-color: #c9c9c9;
-            color: black;
-            font-weight: 600;
-            border-radius: 5px;
-          }
-          .info:hover {
-            background-color: #fff;
-            color: green;
-            border: 1px solid green;
-          }
-        }
-      }
-      .sectionBox__about__box__img {
-        width: 100%;
-        height: 100%;
-        background-image: url("/assets/img/history/history7.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-    }
 
     @media screen and (max-width: 768px) {
       height: ${(props) => (props.hheight ? props.hheight : "100vh")};
+      .sectionBox__about__box {
+        width: 100%;
+        padding: none;
+        margin: none;
+        .sectionBox__about__box__info1 {
+          margin-top: none;
+          h2 {
+            font-size: 5px;
+          }
+          p {
+            font-size: 5px;
+          }
+        }
+        .sectionBox__about__box__info2 {
+          p {
+            font-size: 5px;
+          }
+        }
+        .sectionBox__about__box__info3 {
+          padding: unset;
+          li {
+            font-size: 5px;
+            height: unset;
+          }
+          .info_box {
+            margin: unset;
+            .info {
+              padding: unset;
+            }
+          }
+        }
+      }
       .sectionBox__about {
         width: 80% !important;
         margin-left: 8%;
@@ -234,6 +322,35 @@ function SectionBox(props) {
         .sectionBox__about__info2 {
           p {
             font-size: 15px !important;
+          }
+        }
+        .sectionBox__about__info3 {
+          p {
+            font-size: 15px !important;
+          }
+        }
+        .sectionBox__about__info4 {
+          p {
+            font-size: 15px !important;
+          }
+        }
+        .sectionBox__about__info5 {
+          display: inline-block;
+          .sectionBox__about__info5__box {
+            width: 80%;
+            height: 20%;
+            padding: none;
+            margin: none;
+            h2 {
+              font-size: 8px;
+            }
+            p {
+              font-size: 5px;
+            }
+            .moreLink {
+              padding: none;
+              font-size: 5px;
+            }
           }
         }
       }
@@ -330,7 +447,7 @@ function SectionBox(props) {
         </div>
       </SectionBox>
 
-      <SectionBox>
+      <SectionBox2>
         <div className="sectionBox__about__box">
           <div
             className="sectionBox__about__box__info1"
@@ -369,7 +486,7 @@ function SectionBox(props) {
         >
           <div className="sectionBox__about__box__img"></div>
         </div>
-      </SectionBox>
+      </SectionBox2>
 
       <SectionBox url="/assets/img/cat/cat18.jpg" height="100vh">
         <div className="sectionBox__about">
