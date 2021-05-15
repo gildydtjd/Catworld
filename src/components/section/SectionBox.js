@@ -141,7 +141,7 @@ function SectionBox(props) {
       }
       .sectionBox__about__box {
         width: 100%;
-        height: 35vh;
+        height: 40vh;
         padding: unset;
         margin: unset;
         margin-bottom: 10px;
