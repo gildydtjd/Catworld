@@ -149,22 +149,22 @@ function SectionBox(props) {
         .sectionBox__about__box__info1 {
           margin-top: unset;
           h2 {
-            font-size: 5px !important;
+            font-size: 10px !important;
           }
           p {
-            font-size: 5px !important;
+            font-size: 13px !important;
           }
         }
         .sectionBox__about__box__info2 {
           p {
-            font-size: 3px !important;
+            font-size: 12px !important;
           }
         }
         .sectionBox__about__box__info3 {
           padding: unset;
           li {
-            font-size: 10px !important;
-            line-height: 40px;
+            font-size: 9px !important;
+            height: 25px !important;
           }
           .info_box {
             margin: unset;
