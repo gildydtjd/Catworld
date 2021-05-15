@@ -27,7 +27,7 @@ function Header(props) {
       .sectionBox__header__link {
         font-size: 13px !important;
         margin-right: unset !important;
-        padding: 20px 30px !important;
+        padding: 20px 20px !important;
       }
     }
   `;
