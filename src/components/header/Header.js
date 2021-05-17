@@ -10,7 +10,7 @@ function Header(props) {
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: rgba(0, 0, 0, 0.565);
+    background-color: rgba(0, 0, 0, 0.4);
     .sectionBox__header__link {
       color: white;
       padding: 30px 20px;

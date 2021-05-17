@@ -21,7 +21,7 @@ function About(props) {
       color: #fff;
       margin-left: 10%;
       .company__about__info {
-        margin-top: 25%;
+        padding-top: 25%;
         h2 {
           font-size: 40px;
         }
@@ -35,7 +35,7 @@ function About(props) {
       .company__about {
         width: 60% !important;
         margin-left: 8%;
-        margin-top: ${(props) => (props.marginTT ? props.marginTT : "80%")};
+        padding-top: ${(props) => (props.paddingTT ? props.paddingTT : "80%")};
 
         .company__about__info {
           h2 {
