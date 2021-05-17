@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../components/header/Header";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
 function About(props) {
@@ -52,7 +51,6 @@ function About(props) {
   return (
     <>
       <SectionBox url="/assets/img/cat/cat19.jpg" dis="block">
-        <Header />
         <div className="company__about">
           <div
             className="company__about__info"

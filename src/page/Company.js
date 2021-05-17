@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import CompanyHistoryBox from "../components/companyHistory/CompanyHistoryBox";
 import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 function Company(props) {
   const SectionBox = styled.div`
@@ -53,7 +52,6 @@ function Company(props) {
   return (
     <>
       <SectionBox url="/assets/img/cat/cat13.jpg" dis="block">
-        <Header />
         <div className="company__about">
           <div
             className="company__about__info"

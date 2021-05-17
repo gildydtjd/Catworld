@@ -7,7 +7,10 @@ function Header(props) {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #00001090;
     .sectionBox__header__link {
       color: white;
       padding: 30px 20px;
@@ -15,6 +18,7 @@ function Header(props) {
       margin-right: 100px;
       font-weight: 800;
       text-decoration: none;
+
       :hover {
         color: gold;
         cursor: pointer;

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import useScrollFadeIn from "../../hooks/useScrollFadeIn";
 // import PhotoGallery from "../photo/PhotoGallery";
-import Header from "../header/Header";
 import { Link } from "react-router-dom";
 import Footer from "../footer/Footer";
 // const backUrl = [
@@ -362,7 +361,6 @@ function SectionBox(props) {
   return (
     <>
       <SectionBox url="/assets/img/cat/cat7.jpg" dis="inline-block">
-        <Header />
         <div className="sectionBox__about">
           <div
             className="sectionBox__about__info1"
