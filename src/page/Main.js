@@ -106,7 +106,7 @@ function Main(props) {
         .sectionBox__about__box__info3 {
           padding: unset;
           li {
-            font-size: 9px !important;
+            font-size: 10px !important;
             height: 25px !important;
           }
           .info_box {
@@ -197,7 +197,7 @@ function Main(props) {
           p {
             line-height: 1.5;
             margin-bottom: 1.5rem;
-            font-size: 17px;
+            font-size: 15px !important;
           }
           .moreLink {
             text-decoration: none;
@@ -290,7 +290,7 @@ function Main(props) {
               font-size: 8px;
             }
             p {
-              font-size: 5px;
+              font-size: 12px !important;
             }
             .moreLink {
               padding: none;
@@ -397,7 +397,6 @@ function Main(props) {
             className="sectionBox__about__box__info1"
             {...useScrollFadeIn("right", 1, 0.4)}
           >
-            <h2>2021</h2>
             <p>Catch</p>
             <p>High Class Cat</p>
           </div>
