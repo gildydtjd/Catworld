@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import AboutBox from "../components/about/AboutBox";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
 function About(props) {
@@ -66,7 +67,9 @@ function About(props) {
           </div>
         </div>
       </SectionBox>
-      <SectionBox></SectionBox>
+      <SectionBox>
+        <AboutBox></AboutBox>
+      </SectionBox>
     </>
   );
 }
