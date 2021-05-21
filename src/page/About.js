@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import AboutBox from "../components/about/AboutBox";
+import AboutInfoBox from "../components/about/AboutInfoBox";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
+import Footer from "../components/footer/Footer";
 
 function About(props) {
   const SectionBox = styled.div`
@@ -67,9 +68,10 @@ function About(props) {
           </div>
         </div>
       </SectionBox>
-      <SectionBox>
-        <AboutBox></AboutBox>
+      <SectionBox dis="inline-block" height="100%" hheight="100%">
+        <AboutInfoBox></AboutInfoBox>
       </SectionBox>
+      <Footer />
     </>
   );
 }
