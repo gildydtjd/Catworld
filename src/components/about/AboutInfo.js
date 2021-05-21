@@ -20,11 +20,12 @@ function AboutInfo({ img, name, about }) {
       width: 50%;
       height: 100%;
       .aboutBox__info__img {
-        width: 100%;
+        width: 600px;
         height: 500px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        border-radius: 0.5rem;
       }
     }
     .aboutBox__info__Information2 {
@@ -46,6 +47,7 @@ function AboutInfo({ img, name, about }) {
       .aboutBox__info__Information1 {
         padding: 7px 5px;
         .aboutBox__info__img {
+          width: 100%;
           padding: 10px 0px;
           height: 150px;
         }
@@ -58,7 +60,7 @@ function AboutInfo({ img, name, about }) {
         }
         p {
           padding: unset;
-          font-size: 0.5em;
+          font-size: 0.2em;
         }
       }
     }
