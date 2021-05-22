@@ -1,7 +1,7 @@
 import React from "react";
 
-function Shop(props) {
+function Contact(props) {
   return <div></div>;
 }
 
-export default Shop;
+export default Contact;

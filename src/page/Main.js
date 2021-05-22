@@ -35,11 +35,12 @@ function Main(props) {
       }
       .sectionBox__about__box__info3 {
         height: 20%;
-        padding: 40px 20px;
+        padding: 40px 0px;
         li {
           font-size: 20px;
           height: 2.5rem;
           opacity: 0.7;
+          list-style: none;
         }
         .info_box {
           display: flex;
@@ -108,6 +109,7 @@ function Main(props) {
           li {
             font-size: 10px !important;
             height: 25px !important;
+            list-style: none;
           }
           .info_box {
             margin: unset;
