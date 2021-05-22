@@ -52,7 +52,7 @@ function About(props) {
   `;
   return (
     <>
-      <SectionBox url="/assets/img/cat/cat19.jpg" dis="block">
+      <SectionBox url="/assets/img/cat/cat3.jpg" dis="block">
         <div className="company__about">
           <div
             className="company__about__info"
