@@ -57,17 +57,29 @@ function Footer(props) {
         </Link>
         <li>ㆍ</li>
 
-        <Link to="/company" className="sectionBox__footer__link">
+        <Link
+          to="/company"
+          className="sectionBox__footer__link"
+          onclick="window.scrollTo(0,0)"
+        >
           <li>COMPANY</li>
         </Link>
         <li>ㆍ</li>
 
-        <Link to="/about" className="sectionBox__footer__link">
+        <Link
+          to="/about"
+          className="sectionBox__footer__link"
+          onclick="window.scrollTo(0,0)"
+        >
           <li>ABOUT</li>
         </Link>
         <li>ㆍ</li>
 
-        <Link to="/contact" className="sectionBox__footer__link">
+        <Link
+          to="/contact"
+          className="sectionBox__footer__link"
+          onclick="window.scrollTo(0,0)"
+        >
           <li>Contact</li>
         </Link>
       </ul>
