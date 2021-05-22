@@ -59,12 +59,9 @@ function About(props) {
             {...useScrollFadeIn("right", 1, 0.5)}
           >
             <h2>Catch About</h2>
-            <p>The above company was founded on July 31, 1993</p>
-            <p> and currently has a surplus of 2 billion won in sales</p>
-            <p>
-              Catch is a promising company with support from many large
-              companies
-            </p>
+            <p>Here are some information on cats</p>
+            <p> that exist in the Catch Company.</p>
+            <p>Get solid information and find the cat you're looking for.</p>
           </div>
         </div>
       </SectionBox>
