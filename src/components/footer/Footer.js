@@ -67,7 +67,7 @@ function Footer(props) {
         </Link>
         <li>ㆍ</li>
 
-        <Link to="/" className="sectionBox__footer__link">
+        <Link to="/contact" className="sectionBox__footer__link">
           <li>Contact</li>
         </Link>
       </ul>

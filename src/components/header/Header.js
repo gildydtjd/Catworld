@@ -46,7 +46,7 @@ function Header(props) {
       <Link to="/about" className="sectionBox__header__link">
         <span>ABOUT</span>
       </Link>
-      <Link to="/shop" className="sectionBox__header__link">
+      <Link to="/contact" className="sectionBox__header__link">
         <span>CONTACT</span>
       </Link>
     </HeaderDiv>
