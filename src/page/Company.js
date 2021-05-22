@@ -67,7 +67,7 @@ function Company(props) {
           </div>
         </div>
       </SectionBox>
-      <SectionBox dis="inline-block" height="100%">
+      <SectionBox dis="inline-block" height="100%" hheight="100%">
         <CompanyHistoryBox />
       </SectionBox>
       <Footer />

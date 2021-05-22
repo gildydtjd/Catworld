@@ -56,6 +56,9 @@ function Main(props) {
             color: black;
             font-weight: 600;
             border-radius: 5px;
+            width: 50%;
+            margin-right: 10px;
+            text-align: center;
           }
           .info:hover {
             background-color: #fff;
@@ -119,6 +122,7 @@ function Main(props) {
             .info {
               padding: unset;
               font-size: 5px !important;
+              width: 20%;
             }
           }
         }
@@ -380,7 +384,7 @@ function Main(props) {
               className="sectionBox__about__info5__box"
               {...useScrollFadeIn("right", 1, 0.9)}
             >
-              <h2>Catch Shop</h2>
+              <h2>Catch Contact</h2>
               <p>
                 There are 50,000 cats' favorite toys. Check out the items at the
                 Catch Shop, which has everything for cats.
@@ -418,8 +422,11 @@ function Main(props) {
             <li>1995.08.20 Give a cat snack</li>
             <li>2000.09.27 Play with a cat</li>
             <div className="info_box">
-              <Link to="/shop" className="info">
-                ShopInfo
+              <Link to="/about" className="info">
+                AboutInfo
+              </Link>
+              <Link to="/about" className="info">
+                ContactInfo
               </Link>
             </div>
           </div>
