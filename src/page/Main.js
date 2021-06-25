@@ -29,7 +29,7 @@ function Main(props) {
       }
       .sectionBox__about__box__info2 {
         p {
-          font-size: 20px;
+          font-size: 23px;
           opacity: 0.7;
         }
       }
@@ -37,7 +37,7 @@ function Main(props) {
         height: 20%;
         padding: 40px 0px;
         li {
-          font-size: 20px;
+          font-size: 17px;
           height: 2.5rem;
           opacity: 0.7;
           list-style: none;
@@ -52,7 +52,6 @@ function Main(props) {
             text-decoration: none;
             border: 2px solid #c9c9c9;
             padding: 3px 7px;
-            background-color: #c9c9c9;
             color: black;
             font-weight: 600;
             border-radius: 5px;
